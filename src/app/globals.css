@@ -866,9 +866,10 @@ a {
   color: var(--brand-yellow);
   letter-spacing: -.02em;
   margin: 0 0 10px;
-  font-size: clamp(30px, 4.4vw, 50px);
+  font-size: clamp(20px, 2.9vw, 34px);
   font-weight: 800;
-  line-height: .9;
+  line-height: .92;
+  white-space: nowrap;
 }
 
 .member-name span {
