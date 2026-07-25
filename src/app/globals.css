@@ -960,8 +960,22 @@ a {
 
 .footer {
   border-top: 1px solid var(--line);
-  background: var(--bg-2);
+  background: #0a0a0b;
+  color: #ededec;
   padding: 64px 0 30px;
+  /* dark-on-black overrides scoped to the footer only */
+  --muted: #a7a7ad;
+  --dim: #7e7e85;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-2: rgba(255, 255, 255, 0.2);
+  --amber: var(--brand-yellow);
+  --amber-soft: var(--brand-yellow);
+}
+
+.footer .social-row a:hover {
+  background: var(--brand-yellow);
+  color: #0a0a0b;
+  border-color: var(--brand-yellow);
 }
 
 .footer-top {
