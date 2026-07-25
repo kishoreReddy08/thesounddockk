@@ -3,8 +3,8 @@
 :root {
   --bg: #f4cc48;
   --bg-2: #edc236;
-  --panel: #fbf4da;
-  --panel-2: #f6ecc7;
+  --panel: #faecab;
+  --panel-2: #f4e29a;
   --line: rgba(23, 19, 8, 0.16);
   --line-2: rgba(23, 19, 8, 0.32);
   --text: #17130a;
@@ -470,9 +470,9 @@ a {
 
 .card:before {
   content: "";
-  background: linear-gradient(90deg, var(--amber), transparent);
-  opacity: 0;
-  height: 2px;
+  background: linear-gradient(90deg, var(--amber-soft), transparent);
+  opacity: .55;
+  height: 3px;
   transition: opacity .25s;
   position: absolute;
   inset: 0 0 auto;
@@ -490,8 +490,8 @@ a {
 }
 
 .card.featured {
-  background: linear-gradient(180deg, #fffbe8, var(--panel));
-  border-color: var(--line-2);
+  background: linear-gradient(180deg, #fdf3c0, var(--panel));
+  border-color: rgba(107, 87, 16, 0.4);
 }
 
 .card-num {
@@ -662,11 +662,13 @@ a {
 .shot-tags li {
   font-family: var(--font-mono);
   letter-spacing: .05em;
-  color: var(--dim);
-  border: 1px solid var(--line);
+  color: var(--text);
+  background: rgba(23, 19, 8, 0.06);
+  border: 1px solid var(--line-2);
   border-radius: 999px;
   padding: 5px 11px;
   font-size: 11px;
+  font-weight: 600;
 }
 
 .projects {
